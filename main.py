@@ -1,9 +1,19 @@
-In = open('countries.txt' , 'r')
-out = open('populate_country.sql' , 'w')
-for c in In.read().splitlines():
-    command = f"insert into oj.country(oj.country.country_id , oj.country.country_name )\
-        values(oj.country_id_seq.nextval , '{c}');\n"
-    print(command)
-    out.write(command)
-out.close()
+from selenium import webdriver
+from bs4 import BeautifulSoup
+import pandas as pd
 
+driver = webdriver.Chrome()
+
+problems = []
+
+driver.get("https://cses.fi/problemset/")
+
+content  = driver.page_source
+
+#print(content)
+
+soap = BeautifulSoup(content)
+
+for li in soap.findAll('li' ,attrs = {'class' : 'task' } ):
+    for a in li.findAll('a' , href = True  ):
+        print( a['href'] , a.text)
