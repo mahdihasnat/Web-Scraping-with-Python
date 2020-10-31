@@ -1,0 +1,100 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet " type="text/css" href="/cses.css?2" id="styles">
+  <link rel="stylesheet alternate" type="text/css" href="/cses-dark.css?2" id="styles-dark">
+  <meta name="theme-color" content="white" id="theme-color">
+  <script type="application/json" id="darkmode-enabled">false</script>
+  <script src="/ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fontawesome/css/all.min.css">
+</head>
+<body class="with-sidebar ">
+  <div class="header">
+    <div>
+      <a href="/" class="logo"><img src="/logo.png?1" alt="CSES"></a>
+      <a class="menu-toggle" onclick="document.body.classList.toggle('menu-open');">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div class="controls">
+                <a class="account" href="/user/5643">mahdi.hasnat</a>
+        <span>&mdash;</span>
+                        <a href="/darkmode" title="Toggle dark mode" onclick="return toggle_theme()"><i class="fas fa-adjust"></i><span>Dark mode</span></a>
+                <a href="/logout" title="Log out"><i class="fas fa-sign-out-alt"></i><span>Log out</span></a>
+              </div>
+    </div>
+  </div>
+  <div class="skeleton">
+
+  <div class="navigation">
+    <div class="title-block">
+      <h3><a href="/problemset/list/">CSES Problem Set</a></h3>
+      <h1>Grid Paths</h1>
+<ul class="nav">
+<li><a href="/problemset/task/1625/" class="current">Task</a></li>
+<li><a href="/problemset/submit/1625/" >Submit</a></li>
+<li><a href="/problemset/view/1625/" >Results</a></li>
+<li><a href="/problemset/stats/1625/" >Statistics</a></li>
+<li><a href="/problemset/hack/1625/list/" >Hacking</a></li>
+</ul>
+    </div>
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="content-wrapper">
+
+    <div class="content">
+
+
+<title>CSES - Grid Paths</title><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  "HTML-CSS": {
+    scale: 90,
+    preferredFont: "TeX",
+    availableFonts: ["TeX"],
+  },
+  MathMenu: {
+    showLocale: false,
+  },
+});
+</script>
+<script type="text/javascript"
+  src="/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="/lib/google-code-prettify/run_prettify.js"></script>
+<ul class="task-constraints">
+<li><b>Time limit:</b> 1.00 s</li>
+<li><b>Memory limit:</b> 512 MB</li>
+</ul>
+There are $88418$ paths in a $7 \times 7$ grid from the upper-left square to the lower-left square. Each path corresponds to a $48$-character description consisting of characters <code>D</code> (down), <code>U</code> (up), <code>L</code> (left) and <code>R</code> (right).<br />
+<br />
+For example, the path<br />
+<p><center><img src="/file/3624b569007eb03818b6611755f1bdbe4cdbd0a8334baf9fedc5365914bdd661"></center></p>
+corresponds to the description <code>DRURRRRRDDDLUULDDDLDRRURDDLLLLLURULURRUULDLLDDDD</code>.<br />
+<br />
+You are given a description of a path which may also contain characters <code>?</code> (any direction). Your task is to calculate the number of paths that match the description.<br />
+<br />
+<b id="input">Input</b><br />
+<br />
+The only input line has a $48$-character string of characters <code>?</code>, <code>D</code>, <code>U</code>, <code>L</code> and <code>R</code>.<br />
+<br />
+<b id="output">Output</b><br />
+<br />
+Print one integer: the total number of paths.<br />
+<br />
+<b id="example">Example</b><br />
+<br />
+Input:<br />
+<code>??????R??????U??????????????????????????LD????D?</code><br />
+<br />
+Output:<br />
+<code>201</code>    </div>
+    <div class="nav sidebar">
+<h4>Introductory Problems</h4>...
+<a  href="/problemset/task/1617">Bit Strings<span class="task-score icon "></span></a><a  href="/problemset/task/1618">Trailing Zeros<span class="task-score icon "></span></a><a  href="/problemset/task/1754">Coin Piles<span class="task-score icon "></span></a><a  href="/problemset/task/1755">Palindrome Reorder<span class="task-score icon "></span></a><a  href="/problemset/task/1622">Creating Strings I<span class="task-score icon "></span></a><a  href="/problemset/task/1623">Apple Division<span class="task-score icon "></span></a><a  href="/problemset/task/1624">Chessboard and Queens<span class="task-score icon "></span></a><a class="current" href="/problemset/task/1625">Grid Paths<span class="task-score icon full"></span></a>      <hr />
+<h4>Your submissions</h4>
+
+<a class="" href="/problemset/result/1092148/">2020-10-06 19:18:44 <span class="task-score icon full"></span></a><a class="" href="/problemset/result/1092140/">2020-10-06 19:17:35 <span class="task-score icon zero"></span></a><a class="" href="/problemset/result/1092124/">2020-10-06 19:15:51 <span class="task-score icon zero"></span></a><a class="" href="/problemset/result/1092119/">2020-10-06 19:15:31 <span class="task-score icon zero"></span></a><a class="" href="/problemset/result/1091994/">2020-10-06 18:57:35 <span class="task-score icon zero"></span></a><a class="" href="/problemset/result/1091075/">2020-10-06 16:38:02 <span class="task-score icon zero"></span></a></div>
+</div>
